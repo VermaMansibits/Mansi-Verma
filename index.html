@@ -50,7 +50,7 @@
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
@@ -256,7 +256,7 @@
 		<div class="animated-bg"></div>
 
 		<script>
-			VANTA.NET({
+			VANTA.BIRDS({
 				el: "#animated-bg",
 				mouseControls: true,
 				touchControls: true,
@@ -265,11 +265,16 @@
 				minWidth: 200.00,
 				scale: 1.00,
 				scaleMobile: 1.00,
-				color: 0x3ff5ff,
 				backgroundColor: 0x0,
-				points: 11.00,
-				maxDistance: 21.00,
-				spacing: 16.00
+				color1: 0x36f5e1,
+				color2: 0x146357,
+				colorMode: "lerp",
+				wingSpan: 27.00,
+				speedLimit: 2.00,
+				separation: 92.00,
+				alignment: 51.00,
+				cohesion: 69.00,
+				quantity: 3.00
 			});
 		</script>
 
@@ -278,12 +283,13 @@
 			<div class="container abba">
 				<article class="hero-text bounce-in-left">
 					<div>
-						<p class="subtitle topsec">Hi there&#128075, I'm</p>
+						<p class="subtitle topsec">Hi there, I'm</p>
 						<h1 class="name">&nbsp;MANSI &nbsp; VERMA</h1>
 					</div>
 					<div>
 						<p class="subtitle topsec1">
-							Vice President at Morgan Stanley</br></br> Lead Software Engineer for Ford Model E, EV Divsion | Senior Software Engineer at Microsoft | MS CS at UCLA | BE CS at BITS PILANI GOA CAMPUS</br>
+							Vice President at Morgan Stanley</br></br> Lead Software Engineer for Ford Model E, EV Divsion | Senior Software Engineer at Microsoft<br>
+							MS CS at UCLA | BE CS at BITS PILANI GOA CAMPUS</br>
 						</p>
 
 						<div class="hero-btn-container">
@@ -327,7 +333,7 @@
 						<li>
 							<span>2008</span>
 							<div class="content">
-								<h3>Barc Super Computing Divsion Internship</h3>
+								<h3>BARC Super Computing Divsion Internship</h3>
 							</div>
 						</li>
 						<li>
@@ -345,7 +351,7 @@
 						<li>
 							<span>2010-2012</span>
 							<div class="content">
-								<h3>Master's: CS - UCLA</h3>
+								<h3>MS CS - UCLA</h3>
 							</div>
 						</li>
 						<li>
@@ -357,11 +363,11 @@
 						<li>
 							<span>2023</span>
 							<div class="content">
-								<h3>Ford Model</h3>
+								<h3>Ford Model E, EV Division</h3>
 							</div>
 						</li>
 						<li>
-							<span>2024</span>
+							<span>2023</span>
 							<div class="content">
 								<h3>Morgan Stanley</h3>
 							</div>
@@ -444,7 +450,6 @@
 		<section class="my-skills" id="skills" data-aos="fade-up">
 			<div class="container">
 				<article>
-					<p class="subtitle secc">My</p>
 					<h2 class="title">Skills</h2>
 				</article>
 				<div class='skill-containers'>
@@ -547,7 +552,6 @@
 		<section class="projects-section" id="work-experience">
 			<div class="container">
 				<article data-aos="fade-up">
-					<p class="subtitle secc">My</p>
 					<h2 class="title">Work Experience</h2>
 
 				</article>
@@ -555,7 +559,7 @@
 					<article class="project">
 						<a class="project-img"><img src="./assets/Morgan Stanley.jpg" alt="Morgan Stanley" title="Morgan Stanley" /></a>
 						<div class="projectp">
-							<h2>Morgan Stanley</h2>
+							<h2><a href="https://www.morganstanley.com/" target="_blank">Morgan Stanley</a></h2>
 							<h3>Vice President</h3>
 							<h4>Nov 2023 - Present</h4>
 							<p class="secc" style="text-align: justify;text-justify: inter-word;">
@@ -568,7 +572,7 @@
 					<article class="project">
 						<a class="project-img"><img src="./assets/Ford.png" alt="Ford Motor Company" title="Ford Motor Company" /></a>
 						<div class="projectp">
-							<h2>Ford Motor Company</h2>
+							<h2><a href="https://www.ford.com/" target="_blank">Ford Model E, EV Division</a></h2>
 							<h3>Lead Software Engineer</h3>
 							<h4>Dec 2022 - Nov 2023</h4>
 							<p class="secc"  style="text-align: justify;text-justify: inter-word;">
@@ -578,9 +582,9 @@
 								● Scaled the entire backend to support 20X more traffic by delivering caching, rate limiting and rules engine.<br>
 								● Built mobile notification service and launched it in 30 new markets.<br>
 							</p>
-							
-							<h4>Skills Applied:</h4> 
 							<p class="secc" style="text-align: justify;text-justify: inter-word;">
+								Skills Applied: 
+								<br>								
 								Google Cloud Platform, Java, Spring Boot, Jenkins, PostgreSQL, Azure, Design Patterns, Web Applications, REST APIs, Jira, JavaScript, Docker Products, Google Kubernetes Engine (GKE), UX
 							</p>
 
@@ -589,7 +593,7 @@
 					<article class="project">
 						<a class="project-img"><img src="./assets/Microsoft.png" alt="Microsoft" title="Microsoft" /></a>
 						<div class="projectp">
-							<h2>Microsoft</h2>
+							<h2><a href="https://www.microsoft.com/en-us/" target="_blank">Microsoft</a></h2>
 							<h3>Senior Software Engineer</h3>
 							<h4>June 2020 - Dec 2022</h4>
 							<p class="secc" style="text-align: justify;text-justify: inter-word;">
@@ -630,9 +634,10 @@
 								● This experience was later globalized and shipped to 100+ languages and 200+ regions across the world.<br>
 								● My responsibilities included designing, integrating, and implementing the end to end pipeline and experiences.<br>
 								● Links: League of legends events, Dota2 events<br>
-							</p>
-							<h4>Skills Applied:</h4> 
+							</p>							
 							<p class="secc" style="text-align: justify;text-justify: inter-word;">
+								Skills Applied: 
+								<br>
 								Java, C#, Javascript, Typescript, HTML, HTML5, CSS, Ajax, Microservices, XAP, Azure SQL, Kusto, Geneva, Alerts, Monitoring, Azure
 								Cosmos Db, Azure API Management.
 							</p>
@@ -643,7 +648,7 @@
 					<article class="project">
 						<a class="project-img"><img src="./assets/Microsoft.png" alt="Microsoft" title="Microsoft" /></a>
 						<div class="projectp">
-							<h2>Microsoft</h2>
+							<h2><a href="https://www.microsoft.com/en-us/" target="_blank">Microsoft</a></h2>
 							<h3>Software Engineer II</h3>
 							<h4>Oct 2016 - May 2020</h4>
 							<p class="secc"  style="text-align: justify;text-justify: inter-word;">
@@ -662,7 +667,7 @@
 					<article class="project">
 						<a class="project-img"><img src="./assets/Microsoft.png" alt="Microsoft" title="Microsoft" /></a>
 						<div class="projectp">
-							<h2>Microsoft</h2>
+							<h2><a href="https://www.microsoft.com/en-us/" target="_blank">Microsoft</a></h2>
 							<h3>Software Engineer</h3>
 							<h4>2013 - Sept 2016</h4>
 							<p class="secc" style="text-align: justify;text-justify: inter-word;">
@@ -680,7 +685,7 @@
 					<article class="project">
 						<a class="project-img"><img src="./assets/Microsoft.png" alt="Microsoft" title="Microsoft" /></a>
 						<div class="projectp">
-							<h2>Microsoft</h2>
+							<h2><a href="https://www.microsoft.com/en-us/" target="_blank">Microsoft</a></h2>
 							<h3>Software Engineer Intern</h3>
 							<h4>June 2011 - Sept 2011</h4>
 							<p class="secc"  style="text-align: justify;text-justify: inter-word;">
@@ -691,7 +696,7 @@
 					<article class="project">
 						<a class="project-img"><img src="./assets/Hewlett_Packard_Labs.png" style="background-color: white;" alt="Hewlett Packard Labs" title="Hewlett Packard Labs" /></a>
 						<div class="projectp">
-							<h2>Hewlett Packard Labs</h2>
+							<h2><a href="https://www.hp.com/us-en/home.html" target="_blank">Hewlett Packard Labs</a></h2>
 							<h3>Research Intern</h3>
 							<h4>Jan 2010 - June 2010</h4>
 							<p class="secc" style="text-align: justify;text-justify: inter-word;">
@@ -703,8 +708,8 @@
 					<article class="project">
 						<a class="project-img"><img src="./assets/BARC.jpg" alt="BARC" title="BARC" /></a>
 						<div class="projectp">
-							<h2>Bhabha Atomic Research Centre</h2>
-							<h3>Intern</h3>
+							<h2><a href="https://www.barc.gov.in/" target="_blank">Bhabha Atomic Research Centre</a></h2>
+							<h3>Software Engineering Intern</h3>
 							<h4>May 2008 - July 2008</h4>
 							<p class="secc"  style="text-align: justify;text-justify: inter-word;">
 								
@@ -716,7 +721,6 @@
 				<!-- Projects -->
 				<!-- Project Cards -->
 				<section class="other-noteworthy-project" id="patents" data-aos="fade-up">
-					<p class="subtitle secc">My</p>
 					<h2 class="title">Patents & Publications</h2>
 					<ul class="other-projects">
 						
@@ -756,7 +760,6 @@
 		<section class="projects-section" id="education">
 			<div class="container">
 				<article data-aos="fade-up">
-					<p class="subtitle secc">My</p>
 					<h2 class="title">Education</h2>
 
 				</article>
@@ -789,7 +792,6 @@
 				</section>
 
 				<section class="other-noteworthy-project" id="achievements" data-aos="fade-up">
-					<p class="subtitle secc">My</p>
 					<h2 class="title">Notable Achievements</h2>
 					<br>
 					<br>
@@ -825,7 +827,6 @@
 				</section>
 				
 				<section class="other-noteworthy-project" id="hobbies" data-aos="fade-up">
-					<p class="subtitle secc">My</p>
 					<h2 class="title">Hobby</h2>
 					<br>
 							
@@ -854,48 +855,74 @@
 		
 				</section>
 				<section class="other-noteworthy-project" id="pet" data-aos="fade-up">
-					<p class="subtitle secc">My</p>
 					<h2 class="title">Love for Dogs</h2>
 					<br>
 							
-					<div class="container1" style="background-image: url('dogs/bg.jpg');background-size: cover;">
-						<div class="PetSlides1" style="width:50%;margin: auto;">
-						  <img class="c1" src="dogs\1.jpeg" style="width:100%;float:right">
+					<div class="container1dogs" style="background-color:black;">
+						<div class="PetSlides1" style="width:60%;margin: auto;">
+						<img class="c1" src="dogs\1.jpeg" style="width:100%;float:right">
 						</div>					
 						<div class="PetSlides1" style="width:50%;margin: auto;">
-						  <img class="c1" src="dogs\2.jpeg" style="width:100%;float:right">
+						<img class="c1" src="dogs\2.jpeg" style="width:100%;float:right">
 						</div>					
 						<div class="PetSlides1" style="width:50%;margin: auto;">
-						  <img class="c1" src="dogs\3.jpeg" style="width:100%;float:right">
+						<img class="c1" src="dogs\3.jpeg" style="width:100%;float:right">
 						</div>
 						<div class="PetSlides1" style="width:50%;margin: auto;">
-						  <img class="c1" src="dogs\4.jpeg" style="width:100%;float:right">
+						<img class="c1" src="dogs\4.jpeg" style="width:100%;float:right">
 						</div>
 						<div class="PetSlides1" style="width:50%;margin: auto;">
-						  <img class="c1" src="dogs\5.jpeg" style="width:100%;float:right">
+						<img class="c1" src="dogs\5.jpeg" style="width:100%;float:right">
 						</div>
 						<div class="PetSlides1" style="width:50%;margin: auto;">
-						  <img class="c1" src="dogs\6.jpeg" style="width:100%;float:right">
+						<img class="c1" src="dogs\6.jpeg" style="width:100%;float:right">
 						</div>
 						<div class="PetSlides1" style="width:50%;margin: auto;">
-						  <img class="c1" src="dogs\7.jpeg" style="width:100%;float:right">
+						<img class="c1" src="dogs\7.jpeg" style="width:100%;float:right">
 						</div>
 						<div class="PetSlides1" style="width:50%;margin: auto;">
-						  <img class="c1" src="dogs\8.jpeg" style="width:100%;float:right">
+						<img class="c1" src="dogs\8.jpeg" style="width:100%;float:right">
 						</div>
 						<div class="PetSlides1" style="width:50%;margin: auto;">
-						  <img class="c1" src="dogs\9.jpeg" style="width:100%;float:right">
+						<img class="c1" src="dogs\9.jpeg" style="width:100%;float:right">
 						</div>
 						<div class="PetSlides1" style="width:50%;margin: auto;">
-						  <img class="c1" src="dogs\10.jpeg" style="width:100%;float:right">
+						<img class="c1" src="dogs\10.jpeg" style="width:100%;float:right">
 						</div>
 						<div class="PetSlides1" style="width:50%;margin: auto;">
-						  <img class="c1" src="dogs\11.jpeg" style="width:100%;float:right">
+						<img class="c1" src="dogs\11.jpeg" style="width:100%;float:right">
 						</div>
-					</div>
-					
-		
-		
+						<div class="PetSlides1" style="width:50%;margin: auto;">
+						<img class="c1" src="dogs\12.jpeg" style="width:100%;float:right">
+						</div>
+						<div class="PetSlides1" style="width:50%;margin: auto;">
+						<img class="c1" src="dogs\13.jpeg" style="width:100%;float:right">
+						</div>
+						<div class="PetSlides1" style="width:50%;margin: auto;">
+						<img class="c1" src="dogs\14.jpeg" style="width:100%;float:right">
+						</div>
+						<div class="PetSlides1" style="width:50%;margin: auto;">
+						<img class="c1" src="dogs\15.jpeg" style="width:100%;float:right">
+						</div>
+						<div class="PetSlides1" style="width:50%;margin: auto;">
+						<img class="c1" src="dogs\16.jpeg" style="width:100%;float:right">
+						</div>
+						<div class="PetSlides1" style="width:50%;margin: auto;">
+						<img class="c1" src="dogs\17.jpeg" style="width:100%;float:right">
+						</div>
+						<div class="PetSlides1" style="width:50%;margin: auto;">
+						<img class="c1" src="dogs\18.jpeg" style="width:100%;float:right">
+						</div>
+						<div class="PetSlides1" style="width:50%;margin: auto;">
+						<img class="c1" src="dogs\19.jpeg" style="width:100%;float:right">
+						</div>
+						<div class="PetSlides1" style="width:50%;margin: auto;">
+						<img class="c1" src="dogs\20.jpeg" style="width:100%;float:right">
+						</div>
+						<div class="PetSlides1" style="width:50%;margin: auto;">
+						<img class="c1" src="dogs\21.jpeg" style="width:100%;float:right">
+						</div>
+					</div>	
 				</section>
 			</div>
 		</section>
@@ -938,15 +965,14 @@
 			<div class="container">
 				
 				<p class="subtitle secc">
-					Have a project? or just looking to reach out?</p>
-				<h2 class="title">Let's Work Together</h2>
-				<p class="info secc">
-					Feel free to reach out if you just want to
-					connect or see if we can build something amazing together.
+					</p>
+				<h2 class="title">Contact</h2>
+				<p style="font-size: large;">
+					Have a project in mind or just looking to connect? Let’s collaborate! Feel free to reach out whether you’re looking to brainstorm ideas or explore the possibility of building something amazing together.
 				</p>
 
 				<div>
-					<a href="mailto:mdtngm1998@gmail.com" class="mail-link hover-effect">Get in touch →</a>
+					<a href="mailto:vermamansi.bits@gmail.com" class="mail-link hover-effect">Get in touch →</a>
 				</div>
 			</div>
 		</section>
